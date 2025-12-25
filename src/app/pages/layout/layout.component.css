@@ -1,0 +1,16 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.stock-pill {
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  font-size: 14px;
+}
+
+.stock-card {
+  border-radius: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}

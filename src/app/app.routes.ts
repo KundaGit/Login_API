@@ -1,3 +1,30 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LayoutComponent } from './pages/layout/layout.component';
+import { LoginComponent } from './pages/login/login.component';
+import { GrowAppComponent } from './grow-app/grow-app.component';
+// import { authGuard } from './services/auth.guard';
+export const routes: Routes = [
+     {
+        path: '', redirectTo:'login' , pathMatch:'full'
+    },
+    {
+        path:'login',
+        component:LoginComponent
+    },
+    {
+        path:'',
+        component:LayoutComponent,
+        children:[
+            {
+                path:'dashboard',
+                component:DashboardComponent,
+                // canActivate: [authGuard]
+            },
+             {
+        path:'grow',
+        component:GrowAppComponent
+    },
+        ]
+    }
+];

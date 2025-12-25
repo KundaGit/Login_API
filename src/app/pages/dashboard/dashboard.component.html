@@ -1,0 +1,154 @@
+<div class="container-fluid min-vh-100 bg-light p-4">
+
+  <!-- Header -->
+  <div class="row mb-4">
+    <div class="col d-flex justify-content-between align-items-center">
+      <div>
+        <h2 class="fw-bold mb-0">Dashboard</h2>
+        <small class="text-muted">Overview & statistics</small>
+      </div>
+      <span class="badge bg-success fs-6">System Active</span>
+    </div>
+  </div>
+
+  <!-- Welcome Card -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="card shadow-sm bg-primary text-white">
+        <div class="card-body d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="mb-1">Welcome back 👋</h4>
+            <p class="mb-0">Here’s a quick overview of your application.</p>
+          </div>
+          <i class="bi bi-speedometer2 fs-1"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="row g-4 mb-4">
+
+    <div class="col-xl-3 col-md-6">
+      <div class="card shadow-sm text-center h-100">
+        <div class="card-body">
+          <i class="bi bi-people-fill fs-2 text-primary"></i>
+          <h6 class="mt-2">Users</h6>
+          <h3 class="fw-bold">120</h3>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+      <div class="card shadow-sm text-center h-100">
+        <div class="card-body">
+          <i class="bi bi-currency-rupee fs-2 text-success"></i>
+          <h6 class="mt-2">Revenue</h6>
+          <h3 class="fw-bold">₹45,000</h3>
+          <span class="badge bg-success">+12%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+      <div class="card shadow-sm text-center h-100">
+        <div class="card-body">
+          <i class="bi bi-cart-check fs-2 text-warning"></i>
+          <h6 class="mt-2">Orders</h6>
+          <h3 class="fw-bold">86</h3>
+          <span class="badge bg-warning text-dark">Today</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+      <div class="card shadow-sm text-center h-100">
+        <div class="card-body">
+          <i class="bi bi-shield-check fs-2 text-success"></i>
+          <h6 class="mt-2">Status</h6>
+          <h3 class="fw-bold text-success">Active</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="row g-4">
+
+    <!-- Recent Users Table -->
+    <div class="col-lg-8">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="mb-3">Recent Users</h5>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Status</th>
+                  <th>Joined</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kundan Rajak</td>
+                  <td>{{"kundan@gmail.com"}}</td>
+                  <td><span class="badge bg-success">Active</span></td>
+                  <td>Today</td>
+                </tr>
+                <tr>
+                  <td>Rahul Sharma</td>
+                  <td>{{"rahul@gmail.com"}}</td>
+                  <td><span class="badge bg-secondary">Inactive</span></td>
+                  <td>Yesterday</td>
+                </tr>
+                <tr>
+                  <td>Ankit Verma</td>
+                  <td>{{ 'ankit@gmail.com' }}</td>
+                  <td><span class="badge bg-success">Active</span></td>
+                  <td>2 days ago</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity Panel -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="mb-3">Recent Activity</h5>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <i class="bi bi-check-circle text-success"></i>
+              User registered successfully
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-arrow-repeat text-primary"></i>
+              API sync completed
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-lock text-warning"></i>
+              New login detected
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-cloud-upload text-info"></i>
+              Data backup finished
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
