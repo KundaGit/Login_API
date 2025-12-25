@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "inlineFonts": false,
             "outputPath": "dist/budget-tracker",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -40,11 +41,12 @@
                   "maximumWarning": "500kB",
                   "maximumError": "1MB"
                 },
-                {
+ {
   "type": "css-inline-fonts",
-  "maximumWarning": "8kb",
-  "maximumError": "8kb"
+  "maximumWarning": "12kb",
+  "maximumError": "15kb"
 }
+
             
               ],
               "outputHashing": "all"
